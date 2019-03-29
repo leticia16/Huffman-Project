@@ -12,7 +12,7 @@ void get_size_tree(NODE node, int *size, Byte *TreeString)
 		TreeString[*size] = '\\';
 		TreeString[++(*size)] = aux; 
 	}
-	++(*size); // ponteiro que soma o tamanho da árvore
+	++(*size); // somando o tamanho da árvore
 	get_size_tree(node->left, size,TreeString);
 	get_size_tree(node->right, size, TreeString);
 }
